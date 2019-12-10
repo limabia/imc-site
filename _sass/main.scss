@@ -86,3 +86,28 @@ img {
     align-items: center;
     text-align: center;
 }
+
+#quem-somos {
+    img{
+        max-width: 60%;
+    }
+}
+
+#redes-sociais {
+    padding: 50px 0;
+
+    img {
+        margin-top: 20px;
+        max-width: 80px;
+    }
+}
+
+.footer{
+    background: #00A499;
+    min-height: 100px;
+    color: white;
+    p {
+        text-align: center;
+        vertical-align: bottom;
+    }
+}
