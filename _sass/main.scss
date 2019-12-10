@@ -92,17 +92,20 @@ img {
 }
 
 #quem-somos {
+    padding: 70px 0;
     img{
-        max-width: 60%;
+        max-width: 50%;
     }
 }
 
 #redes-sociais {
-    padding: 50px 0;
+    padding: 70px 0;
+    background:#00A499;
+    color: white;
 
     img {
         margin-top: 20px;
-        max-width: 80px;
+        max-width: 60px;
     }
 }
 
