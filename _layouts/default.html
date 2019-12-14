@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="assets/plugins/open_sans.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="assets/css/index.css"> <!-- TODO mudar para scss-->
@@ -12,24 +12,23 @@
 </head>
 
 <body>
-
-    <div class="menu">
-        <img src="assets/img/logo_verde.png">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Missão</a></li>
-                <li><a href="#">Visão</a></li>
-                <li><a href="#">Encontre-nos</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header class="menu navbar">
+        <div class="container">
+            <img src="assets/img/logo_verde.png">
+            <nav class="float-right">
+                <a href="#">Home</a>
+                <a href="#">Missão</a>
+                <a href="#">Visão</a>
+                <a href="#">Encontre-nos</a>
+            </nav>
+        </div>
+    </header>
 
     {{ content }}
 
     <div class="footer">
         <p>
-            <b>@Copyright 2020 - Igreja Monte Carmelo</b><br>
+            <strong>@Copyright 2020 - Igreja Monte Carmelo</strong><br>
             Todos os direitos reservados.
         </p>
     </div>
