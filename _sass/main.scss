@@ -122,14 +122,15 @@ img {
 
 #redes-sociais {
     height: 60vh;
-    margin-top: 100px;
+    margin-top: 0px;
     text-align: center;
     padding: 70px 0;
     background:$primary-color;
     color: white;
 
     h4 {
-     font-size: 2rem;   
+        font-size: 1.5rem;
+        margin-top: 50px;
     }
     p {
         margin-top: 3rem;
@@ -146,10 +147,12 @@ img {
     .col-sm-12.image{
         padding:0;
     }
-    p {
+    p, h4 {
         line-height: 2.5rem;
-        text-align: justify;
+        text-align: center;
+        margin-top: 40px;
     }
+
 }
 
 #front-banner {
@@ -191,4 +194,8 @@ img {
         vertical-align: bottom;
         line-height: 2rem;
     }
+}
+
+.center {
+    text-align: center
 }
