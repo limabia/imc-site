@@ -89,7 +89,7 @@ img {
 
 /* section conteudo/img centralizada */
 .centralized-content {
-    height: 75vh;
+    
     align-items: center;
     text-align: center;
     color: $primary-color;
@@ -121,7 +121,6 @@ img {
 }
 
 #redes-sociais {
-    height: 60vh;
     margin-top: 0px;
     text-align: center;
     padding: 70px 0;
@@ -141,16 +140,24 @@ img {
         margin-top: 20px;
         width: 100px;
     }
+
+    .rede {
+        margin: 20px 0;
+    }
 }
 
 .missao-visao {
     .col-sm-12.image{
         padding:0;
     }
+    h1 {
+        margin-top: 40px;
+    }
+    
     p, h4 {
         line-height: 2.5rem;
         text-align: center;
-        margin-top: 40px;
+        margin: 40px 20px;
     }
 
 }
