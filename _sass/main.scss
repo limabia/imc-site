@@ -1,9 +1,5 @@
 /* TODO transformar em scss */
-/*
-cores:
-cinza: #63666A
-verde: #00A499
-*/
+
 $primary-color: #00A499;
 $grey: #63666A;
 
@@ -22,6 +18,29 @@ img {
     max-width: 100%;
 }
 
+
+.main-btn{
+    padding: 15px 20px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    display: block;
+    width: 290px;
+    margin: auto;
+    margin-top: 3rem;
+
+    &:hover {
+        border: 3px solid $primary-color;
+        color: $primary-color !important;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 2.4rem;
+    }
+}
+
 /* menu */
 .menu {
     background: #000000;
@@ -31,6 +50,12 @@ img {
         max-width: 200px;
         height: 60px;
     }
+}
+
+header.menu {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
 .menu nav a {
@@ -51,6 +76,7 @@ img {
 .banner {
     width: 100%;
     height: 100vh;
+    min-height: 650px;
     background: url('../img/principal.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,19 +96,19 @@ img {
         color: white;
         position: relative;
         text-align: center;
-        padding-top: 30vh;
-        font-size: 4rem;
-        line-height: 7rem;
+        padding: 25vh 10px 0 10px;
+        font-size: 3.3rem;
+        line-height: 4.5rem;
 
         @media (max-width: 992px) {
             font-size: 3.5rem;
             line-height: 6rem;
-            padding-top: 25vh;
+            padding-top: 20vh;
         }
         @media (max-width: 576px) {
-            font-size: 2.5rem;
-            line-height: 4rem;
-            padding-top: 25vh;
+            font-size: 2.2rem;
+            line-height: 3rem;
+            padding-top: 20vh;
         }
     }
 }
@@ -113,23 +139,24 @@ img {
 }
 
 #quem-somos {
-    padding: 70px 0;
+    padding: 40px 2rem 60px 2rem;
 
     h5 {
-        line-height: 1.5;
+        line-height: 1.2;
+        font-size: 1.5rem;
     }
 }
 
 #redes-sociais {
     margin-top: 0px;
     text-align: center;
-    padding: 70px 0;
+    padding: 50px 0;
     background:$primary-color;
     color: white;
 
     h4 {
         font-size: 1.5rem;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     p {
         margin-top: 3rem;
@@ -139,10 +166,6 @@ img {
     img {
         margin-top: 20px;
         width: 100px;
-    }
-
-    .rede {
-        margin: 20px 0;
     }
 }
 
@@ -157,7 +180,7 @@ img {
     p, h4 {
         line-height: 2.5rem;
         text-align: center;
-        margin: 40px 20px;
+        margin: 40px 10px;
     }
 
 }
@@ -170,8 +193,8 @@ img {
 }
 
 #encontrenos {
-    padding: 50px 0;
-    min-height: 40vh;
+    background: lighten($grey,55);
+    padding: 60px 0;
     h4 {
         color: $primary-color;
         font-size: 2rem;
@@ -192,13 +215,11 @@ img {
 }
 
 .footer{
-    padding: 30px;
+    padding: 20px;
+    text-align: center;
     background: $primary-color;
-    min-height: 100px;
     color: white;
     p {
-        text-align: center;
-        vertical-align: bottom;
         line-height: 2rem;
     }
 }
